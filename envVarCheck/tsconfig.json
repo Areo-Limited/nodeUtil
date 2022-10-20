@@ -19,6 +19,7 @@
       "checkJs": true,
       "moduleResolution": "node",
       "declaration": true
-    }
+    },
+    "exclude": ["./download_utils"]
   }
   

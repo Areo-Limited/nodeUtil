@@ -1,4 +1,4 @@
-import { isJson } from "../json/json.js";
+import { isJson } from "json";
 export const checkNodeEnv = () => {
     if (process.env["NODE_ENV"] === undefined)
         throw new Error("NODE_ENV environment variable is not set.");
