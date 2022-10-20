@@ -15,5 +15,6 @@
   },
   "dependencies": {
     "json": "file:download_utils/json"
-  }
+  },
+  "type": "module"
 }
