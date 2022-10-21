@@ -38,14 +38,14 @@ export class EnvVarCheck{
         for (const key of expectedEnv.keys()){
             const value = expectedEnv.get(key);
             if (process.env[key] === undefined) throw new EnvironmentVariableError(
-                `The environment variable ${key} is missing in the environment.`
+                `The environment variable '${key}' is missing in the environment.`
             )
             
             const typeOfEnv = isJson(process.env[key])? "json" : typeof(value);
 
             if (typeOfEnv !== value) {
                 throw new EnvironmentVariableError(
-                    `The environment variable ${key} is not in the correct type. The expected type is ${value} but not ${typeOfEnv}`
+                    `The environment variable '${key}' is not in the correct type. The expected type is '${value}' but not '${typeOfEnv}'`
                 )
             }
         }
